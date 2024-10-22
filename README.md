@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a simple yet powerful command-line calculator implemented in Rust. It provides basic arithmetic operations with a user-friendly interface, demonstrating modular design and Rust programming concepts. The calculator includes a history feature to track and review past calculations, with the ability to download this history to a file.
+This project is a simple yet powerful command-line calculator implemented in Rust. It provides basic arithmetic operations but will add more in the future. The calculator includes a history feature to track and review past calculations, with the ability to download this history to a file.
 
 ## Features
 

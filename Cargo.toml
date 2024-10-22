@@ -4,7 +4,7 @@ authors = ["Tudora Sebastian tudora.sebastian96@gmail.com"]
 description = "A simple calculator written in Rust as a learning project"
 license = "MIT"
 repository="https://github.com/tudrsebastian/rust-calculator"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 [[bin]]
