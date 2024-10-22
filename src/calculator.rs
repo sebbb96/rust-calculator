@@ -1,5 +1,6 @@
 use crate::history::{History, HistoryEntry};
-
+use std::fs;
+use std::io::Write;
 pub struct Calculator {
     result: f64,
     has_result: bool,
@@ -62,7 +63,21 @@ impl Calculator {
     pub fn get_history(&self) -> &[HistoryEntry] {
         self.history.get_entries()
     }
-
+    pub fn create_file_history(&self) -> std::io::Result<()> {
+        let mut file = fs::File::create("operations_history.txt")?;
+        for (i, entry) in self.history.get_entries().iter().enumerate() {
+            writeln!(
+                file,
+                "{}. {} {} {} = {}",
+                i + 1,
+                entry.operands[0],
+                entry.operation,
+                entry.operands[1],
+                entry.result
+            )?;
+        }
+        Ok(())
+    }
     pub fn clear_history(&mut self) {
         self.history.clear();
     }

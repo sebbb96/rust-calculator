@@ -15,6 +15,7 @@ fn main() {
         "/",
         "clear",
         "history",
+        "download history",
         "clear history",
         "exit",
     ]);
@@ -49,6 +50,10 @@ fn main() {
                     );
                 }
             }
+            "download history" => match calculator.create_file_history() {
+                Ok(_) => println!("History successfully downloaded to file."),
+                Err(e) => println!("Error downloading history: {}", e),
+            },
             "clear history" => {
                 calculator.clear_history();
                 println!("History cleared.");

@@ -1,7 +1,16 @@
 [package]
 name = "rust-calculator"
+authors = ["Tudora Sebastian tudora.sebastian96@gmail.com"]
+description = "A simple calculator written in Rust as a learning project"
+license = "MIT"
+repository="https://github.com/tudrsebastian/rust-calculator"
 version = "0.1.0"
 edition = "2021"
+
+[[bin]]
+name = "calc"
+path = "src/main.rs"
+
 
 [dependencies]
 dialoguer = "0.11.0"
