@@ -1,5 +1,5 @@
 [package]
-name = "rust-calculator"
+name = "rust-cli-calculator"
 authors = ["Tudora Sebastian tudora.sebastian96@gmail.com"]
 description = "A simple calculator written in Rust as a learning project"
 license = "MIT"
